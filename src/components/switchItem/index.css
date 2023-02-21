@@ -1,0 +1,31 @@
+.switch-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 18px;
+  color: #000;
+  border-bottom: 1px solid #4c4c4d;
+  background-color: lightgray;
+}
+.switch-item {
+  flex: 1;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+.switch-item ::after {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 1px;
+  background-color: #fff;
+  right: 0px;
+  top: 20px;
+}
+.switch-item:last-of-type ::after {
+  display: none;
+}
+.switch-wrap > .active {
+  background-color: #fff;
+}
